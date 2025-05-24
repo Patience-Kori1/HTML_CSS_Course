@@ -91,18 +91,26 @@ table th td {
     background-color:bisque;
     /* margin: 20px; */
     /* padding: 10px; */
-    width: 1500px;
+    width: 350px;
     height: 150px;
     margin: 10px;
     padding: 25px;
     border: 5px solid black;
-    
-
+    display: block;
+    list-style-type: decimal ;
+    list-style-position: inside;
 }
 .inline {
-    background-color:bisque;
+    background-color:rgb(247, 140, 8);
     color:red;
     margin: 100px;
     padding: 8px;    
 }
 
+
+.section5 li {
+    color: blue;
+    background-color: bisque;
+    display: list-item;
+    list-style-type: square;
+}

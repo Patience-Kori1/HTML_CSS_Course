@@ -75,3 +75,34 @@ table th td {
     padding: 10px;
     border-radius: 25px;
 }
+
+/*************************  Section 5 *******************/
+
+.section5 {
+    background-color: rgb(176, 197, 190) ;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.block {
+    background-color:bisque;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    width: 1500px;
+    height: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+    
+
+}
+.inline {
+    background-color:bisque;
+    color:red;
+    margin: 100px;
+    padding: 8px;    
+}
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démo des types de display en CSS</title>
+  <style>
+    /* --------- OUTER DISPLAY --------- */
+    .block-box {
+      display: block; /* occupe toute la largeur */
+      background: lightblue;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .inline-box {
+      display: inline; /* s'aligne avec le texte */
+      background: pink;
+      padding: 5px;
+    }
+
+    .inline-block-box {
+      display: inline-block;
+      background: orange;
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      vertical-align: middle;
+    }
+
+    .none-box {
+      display: none; /* n'apparaît pas du tout */
+    }
+
+    .list-item-box {
+      display: list-item;
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    /* --------- INNER DISPLAY --------- */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      background: #eee;
+      padding: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      background: #fafafa;
+      padding: 10px;
+    }
+
+    .table-container {
+      display: table;
+      background: #eee;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
+    .table-cell {
+      display: table-cell;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .ruby-box {
+      display: ruby;
+      font-size: 20px;
+    }
+
+    .ruby-text {
+      display: ruby-text;
+      font-size: 12px;
+    }
+
+    /* --------- POSITIONNEMENT FLOTTANT --------- */
+    .float-box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: violet;
+      margin: 10px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Général */
+    section {
+      border: 1px dashed #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Démo complète des display CSS</h1>
+
+  <section>
+    <h2>1. Display Block</h2>
+    <div class="block-box">Je suis un bloc (block)</div>
+  </section>
+
+  <section>
+    <h2>2. Display Inline</h2>
+    <span class="inline-box">Je suis inline</span>
+    <span class="inline-box">Moi aussi</span>
+  </section>
+
+  <section>
+    <h2>3. Display Inline-block</h2>
+    <div class="inline-block-box">A</div>
+    <div class="inline-block-box">B</div>
+  </section>
+
+  <section>
+    <h2>4. Display List-item</h2>
+    <div class="list-item-box">Item personnalisé</div>
+  </section>
+
+  <section>
+    <h2>5. Display None</h2>
+    <div class="none-box">Tu ne me vois pas</div>
+  </section>
+
+  <section>
+    <h2>6. Display Flex</h2>
+    <div class="flex-container">
+      <div style="background: lightcoral; padding: 10px;">Item 1</div>
+      <div style="background: lightgreen; padding: 10px;">Item 2</div>
+      <div style="background: lightblue; padding: 10px;">Item 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Display Grid</h2>
+    <div class="grid-container">
+      <div style="background: lightyellow; padding: 10px;">Grille 1</div>
+      <div style="background: lightsalmon; padding: 10px;">Grille 2</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Display Table</h2>
+    <div class="table-container">
+      <div class="table-row">
+        <div class="table-cell">Cell 1</div>
+        <div class="table-cell">Cell 2</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>9. Display Ruby</h2>
+    <ruby class="ruby-box">
+      漢 <rt class="ruby-text">kan</rt>
+      字 <rt class="ruby-text">ji</rt>
+    </ruby>
+  </section>
+
+  <section class="clearfix">
+    <h2>10. Float (technique)</h2>
+    <div class="float-box">Flottant</div>
+    <p>Texte qui s'écoule autour de la boîte flottante.</p>
+  </section>
+</body>
+</html>

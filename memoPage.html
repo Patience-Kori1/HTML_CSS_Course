@@ -6,6 +6,9 @@
   <title>Démo des types de display en CSS</title>
   <style>
     /* --------- OUTER DISPLAY --------- */
+
+
+    
     .block-box {
       display: block; /* occupe toute la largeur */
       background: lightblue;
@@ -102,6 +105,112 @@
       padding: 10px;
       margin-bottom: 20px;
     }
+
+    /* Float */
+.float_box {
+    width: 200px;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    background-color: teal;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_clear {
+    clear: both;
+    margin-top: 120px;
+}
+
+/* Position */
+.position_static {
+    position: static;
+    background: #d9edf7;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.position_relative {
+    position: relative;
+    left: 20px;
+    background: #fcf8e3;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.position_absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background: #f2dede;
+    padding: 10px;
+}
+
+.position_fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #dff0d8;
+    padding: 10px;
+    z-index: 100;
+}
+
+.position_sticky {
+    position: sticky;
+    top: 0;
+    background: #cce5ff;
+    padding: 10px;
+}
+
+/* Z-Index */
+.zindex_box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.zindex_one {
+    background-color: rgba(255, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.zindex_two {
+    background-color: rgba(0, 0, 255, 0.7);
+    z-index: 2;
+    left: 100px;
+    top: 350px;
+}
+
+/* Transform */
+.transform_translate {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    transform: translate(30px, 20px);
+    padding: 10px;
+}
+
+/* Margin auto */
+.margin_auto_box {
+    width: 300px;
+    height: 100px;
+    background-color: purple;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
   </style>
 </head>
 <body>
@@ -174,5 +283,49 @@
     <div class="float-box">Flottant</div>
     <p>Texte qui s'écoule autour de la boîte flottante.</p>
   </section>
+
+  <h1> Techniques de Positionnement CSS</h1>
+
+    <!-- Float -->
+    <section class="float_exemple">
+        <h2>Technique : Float</h2>
+        <div class="float_box float_left">Boîte flottante à gauche</div>
+        <div class="float_box float_right">Boîte flottante à droite</div>
+        <div class="float_clear">Contenu après float</div>
+    </section>
+
+    <!-- Position -->
+    <section class="position_exemple">
+        <h2>Technique : Position (static, relative, absolute, fixed, sticky)</h2>
+        <div class="position_static">Static (par défaut)</div>
+        <div class="position_relative">Relative (décalée par rapport à sa position normale)</div>
+        <div class="position_absolute">Absolute (par rapport à l’élément parent positionné)</div>
+        <div class="position_fixed">Fixed (fixé à la fenêtre)</div>
+        <div class="position_sticky">Sticky (colle au scroll)</div>
+    </section>
+
+    <!-- Z-Index -->
+    <section>
+        <h2>Démo simple : Z-Index</h2>
+        <div style="position: relative; height: 200px; border: 1px solid #aaa;">
+            <div style="position: absolute; top: 30px; left: 30px; width: 120px; height: 120px; background: rgba(255, 0, 0, 0.6); z-index: 1;">
+            Z-Index 1
+            </div>
+        <div style="position: absolute; top: 60px; left: 60px; width: 120px; height: 120px; background: rgba(0, 0, 255, 0.6); z-index: 2;">  Z-Index 2
+    </div>
+  </div>
+</section>
+
+    <!-- Transform: translate -->
+    <section class="transform_exemple">
+        <h2>Technique : Transform (translate)</h2>
+        <div class="transform_translate">Transformé avec translate</div>
+    </section>
+
+    <!-- Centrage avec margin auto -->
+    <section class="margin_auto_exemple">
+        <h2>Technique : Centrage avec margin auto</h2>
+        <div class="margin_auto_box">Je suis centré horizontalement</div>
+    </section>
 </body>
 </html>

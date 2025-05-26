@@ -233,3 +233,17 @@ table th td {
     transform: scale(1.0, 1.0);
     opacity: 1;
 }
+
+.menu_burger {
+    display:none;
+}
+
+/**** Media Query*/
+@media screen and (max-width: 768px){
+    .menu_burger {
+        display: block;
+    }
+    .menu_desktop {
+        display: none;
+    }
+}

@@ -93,7 +93,7 @@ table th td {
     /* padding: 10px; */
     width: 350px;
     height: 150px;
-    margin: 10px;
+    margin: 20px 20px 20px 100px;
     padding: 25px;
     border: 5px solid black;
     display: block;
@@ -114,12 +114,15 @@ table th td {
     display: list-item;
     list-style-type: square;
 }
+/************** Au dessous du Main **********/
+.img_test {
+    width: 200px;
+    margin-top:10px;
+    border: 5px solid black;
+}
 
 /******* CSS concernant le menu burger ******/
 
-/**Mobile (Hamburger-)Menu from here on**/
-
-/** This is kind of a styled trigger here **/
 #menuToggle
 {
     display: block;
@@ -237,8 +240,9 @@ table th td {
 .menu_burger {
     display:none;
 }
+/****** Fin Menu burger ******/
 
-/**** Media Query*/
+/**** Media Query *******/
 @media screen and (max-width: 768px){
     .menu_burger {
         display: block;

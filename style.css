@@ -104,7 +104,8 @@ table th td {
     background-color:rgb(247, 140, 8);
     color:red;
     margin: 100px;
-    padding: 8px;    
+    padding: 8px; 
+    border:10px solid black  
 }
 
 

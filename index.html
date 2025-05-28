@@ -166,11 +166,42 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia autem harum quis eaque eligendi itaque facere sed soluta. Quasi placeat non totam facere vitae, quam ipsa tenetur veritatis error.<span class="inline"> Je suis un boite inline, je ne vais pas à la ligne, je ne prend pas toute la largeur  qu'on me donne  </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis libero, illum dolorem explicabo aperiam, omnis velit quas sint pariatur quisquam perferendis a provident accusantium adipisci facilis officia quibusdam aspernatur! Libero?</p> <br><br><br><br><br>
 
-    </main>
-
     <!-- Au dessous du main-->
-    <h4> Un test montrant la particularité de l'élément img qui est inline mais qui fais la particularité en respectant et activant les valeurs des principaux éléments d'un modèle de boite block (w,h,b,p,m) </h4>
-    <img src="IMAGE/basket2.jpg" alt="" class="img_test">
+        <h4> Un test montrant la particularité de l'élément img qui est inline mais qui fais la particularité en respectant et activant les valeurs des principaux éléments d'un modèle de boite block (w,h,b,p,m) </h4>
+        <img src="IMAGE/basket2.jpg" alt="" class="img_test">
+
+        <section>
+            <h1>Flux d'un document de base</h1>
+
+            <p class="flux_normal">
+                Je suis un élément de niveau bloc de base. Mes éléments de niveau bloc
+                adjacents sont sur de nouvelles lignes en dessous de moi.
+            </p>
+
+            <p class="flux_normal">
+                Par défaut, nous occupons 100% de la largeur de notre élément parent et nous
+                sommes aussi hauts que notre contenu enfant. Nos largeur et hauteur totales
+                sont égales à la largeur/hauteur de notre contenu + remplissage + encadrement.
+            </p>
+
+            <p class="flux_normal">
+                Nous sommes séparés de nos marges. Comme il y a fusion des marges, nous sommes
+                séparés par la largeur de l'une de nos marges et non les deux.
+            </p>
+
+            <p class="flux_normal">
+                Des éléments inline <span>comme celui-ci</span> ou <span>celui‑là</span> sont
+                placés sur la même ligne et les nœuds de texte adjacents, s'il y a de la place
+                sur la même ligne. Les débordements des éléments inline
+                <span
+                >sont placés sur une nouvelle ligne si possible (comme celle‑ci contenant du
+                texte)</span
+                >, sinon ils sont placés sur une nouvelle ligne, comme cette image&nbsp;:
+                <img src="long.jpg" alt="morceau de tissus" />
+            </p>
+
+        </section>
+    </main>
     <!-- Footer-->
 </body>
 </html>

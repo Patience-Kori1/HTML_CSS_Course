@@ -244,6 +244,73 @@ table th td {
 }
 /****** Fin Menu burger ******/
 
+.section6 {
+    background-color: bisque;
+    width: 1000px;
+    margin:100px auto;
+    padding: 100px;
+    border-radius: 15px;
+
+}
+
+.section6 p {
+  background: rgba(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  padding: 10px;
+  margin: 10px;
+}
+
+.section6 span {
+  background: white;
+  border: 1px solid black;
+}
+
+.section7 {
+ background-color: rgb(176, 197, 190);
+ margin:auto;
+ padding: 10px;
+ border-radius: 25px;
+ width: 1500px;
+ display: flex;
+ justify-content: center;   
+ flex-direction: column;
+ gap:10px
+}
+.section7 h1 {
+    background-color: #fff;
+    margin: auto;
+}
+
+.positioned {
+  position: static;
+  background: rgb(227, 227, 170);
+}
+
+.section7 p {
+        background: bisque;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+.section7 span {
+        background: rgb(225, 181, 181);
+        border: 1px solid black;
+      }
+
+.sectionN {
+    background-color: rgb(176, 197, 190)    ;
+    width: 1500px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+.title1N {
+    margin: auto;
+}
+
+
 /**** Media Query *******/
 @media screen and (max-width: 768px){
     .menu_burger {

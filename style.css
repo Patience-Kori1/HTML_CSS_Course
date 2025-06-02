@@ -402,6 +402,67 @@ table th td {
     margin: auto;
 }
 
+/**** Section N1 Test Flexbox****/
+.sectionN1 {
+ background-color: rgb(176, 197, 190);
+ margin:50px auto;
+ padding: 10px;
+ border-radius: 25px;
+ width: 1500px;
+ display: flex; 
+ justify-content: center;   
+ flex-direction: column;
+ gap:10px;
+}
+.sectionN1 h1 {
+    background-color: white;
+    margin: auto;
+}
+.boxRed{
+    width: 1200px;
+    height: 800px;
+    background-color: #ee0f0f;
+    display: flex;
+    margin: auto;
+}
+.boxBlue{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+}
+.boxYellow{
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxGreen{
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    border: 1px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxGrey{
+    width: 100px;
+    height: 150px;
+    background-color: grey;
+    border: 1px solid black;
+    margin: 5px;
+}
+.boxPink{
+    width: 80px;
+    height: 150px;
+    background-color: pink;
+    border: 1px solid black;
+    margin: 5px;
+}
+
 
 /**** Media Query *******/
 @media screen and (max-width: 768px){

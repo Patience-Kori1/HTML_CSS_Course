@@ -388,6 +388,49 @@ table th td {
         border: 1px solid black;
       }
 
+/****** Section 11 : Position Sticky ******/
+.section11 {
+ background-color: rgb(176, 197, 190);
+ margin:50px auto;
+ padding: 10px;
+ border-radius: 25px;
+ width: 1500px;
+ display: flex; 
+ justify-content: center;   
+ flex-direction: column;
+ gap:10px;
+}
+.section11 h1 {
+    background-color: white;
+    margin: auto;
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+.section11 p {
+        background: bisque;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+}
+.section11 span {
+        background: rgb(225, 181, 181);
+        border: 1px solid black;
+}
+.section11 dl {
+    margin: auto;
+}
+.section11 dt {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 35px;
+  left: 0;
+  margin: 1em 0;
+  z-index: 5;
+}
+
 /****** Section N ******/
 .sectionN {
     background-color: rgb(176, 197, 190)    ;

@@ -431,6 +431,68 @@ table th td {
   z-index: 5;
 }
 
+/****** Flex-Direction ******/
+
+.section12 {
+    background-color: rgb(176, 197, 190);
+    margin:50px auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1500px;
+    gap:10px;
+}
+.section12 header {
+    background: purple;
+    height: 100px;
+}
+.section12 h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+.section12 article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+.section12 div {
+    display: flex;
+    flex-direction: column;
+}
+
+/****** Section 13 Flex-Wrap ******/
+.section13 {
+    background-color: rgb(176, 197, 190);
+    margin:50px auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1500px;
+    gap:10px;
+}
+.section13 header {
+    background: purple;
+    height: 100px;
+}
+.section13 h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+.section13 article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 200px;
+}
+.section13 div {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
 /****** Section N ******/
 .sectionN {
     background-color: rgb(176, 197, 190)    ;

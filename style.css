@@ -461,7 +461,7 @@ table th td {
     flex-direction: column;
 }
 
-/****** Section 13 Flex-Wrap ******/
+/****** Section 13 Flex-Wrap et Flex-Flow ******/
 .section13 {
     background-color: rgb(176, 197, 190);
     margin:50px auto;
@@ -491,6 +491,44 @@ table th td {
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
+}
+
+/****** Section 14 Flex: Valeur ou Flex-Basis; Flex-Grow; Flex-Shrink******/
+.section14 {
+    background-color: rgb(176, 197, 190);
+    margin:50px auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1500px;
+    gap:10px;
+}
+.section14 header {
+    background: purple;
+    height: 100px;
+}
+.section14 h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+.section14 article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex : 1;
+    /* flex:1 100px; */
+    /* flex-basis: 200px; */
+    /* flex-grow:1; */
+}
+.section14 div {
+display: flex;
+}
+.section14 article:nth-of-type(3) {
+    flex: 3;
+    /* flex:3 100px; */
+    /* flex-basis: 700px; */
+    /* flex-grow:3; */
 }
 
 /****** Section N ******/

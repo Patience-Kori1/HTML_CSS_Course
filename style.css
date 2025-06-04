@@ -608,6 +608,54 @@ display: flex;
   background-color:rgb(243, 108, 108);
 }
 
+/****** Section 17 ******/
+.section17 {
+    background-color: rgb(176, 197, 190);
+    margin:50px auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1500px;
+}
+.section17 header {
+    background: purple;
+    height: 100px;
+}
+.section17 h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+.section17 article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+.section17 div {
+    display: flex;
+}
+.section17 article {
+    flex: 1 200px;
+}
+.section17 article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+}
+.section17 article:nth-of-type(3) div:first-child {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.section17 button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 /****** Section N ******/
 .sectionN {
     background-color: rgb(176, 197, 190)    ;

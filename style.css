@@ -656,6 +656,60 @@ display: flex;
     line-height: 1.5;
 }
 
+/****** Section 18 EXEMPLE 2 DES FLEX IMBRIQUES ******/
+.section18 {
+    background-color: rgb(176, 197, 190);
+    margin:50px auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1500px;
+}
+.header_a {
+    background: purple;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.section18 h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.header_b, .footer {
+    background-color: #444;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex: 1; 
+}
+.sidebar {
+    background-color: #eee;
+    padding: 1rem;
+    width: 200px;
+}
+.main {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.article {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
 /****** Section N ******/
 .sectionN {
     background-color: rgb(176, 197, 190)    ;

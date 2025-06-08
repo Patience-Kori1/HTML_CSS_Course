@@ -719,7 +719,7 @@ display: flex;
     width: 1500px;
 }
 .section19 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: capitalize;
     text-shadow: 1px 1px 1px red,
                     2px 2px 1px red;
@@ -742,6 +742,44 @@ display: flex;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
     letter-spacing: 1px;
+}
+.section19 ul {
+  padding: 0;
+  width: 100%;
+}
+
+.section19 li {
+  display: inline;
+}
+
+.section19 a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+.section19 li:last-child a {
+  margin-right: 0;
+}
+
+.section19 a:link,
+a:visited,
+a:focus {
+  background: yellow;
+}
+
+a:hover {
+  background: orange;
+}
+
+a:active {
+  background: red;
+  color: white;
 }
 
 /****** Section N ******/
